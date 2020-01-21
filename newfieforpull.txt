@@ -1,0 +1,2 @@
+Frontend> login.component.html > onSignin() > login.component.ts> this.authService.login();> this.setCredentials(id_token); > Backend (auth Function)
+
