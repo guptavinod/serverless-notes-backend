@@ -1,4 +1,4 @@
-service: sls-notes-backend
+service: sls-offline-notes
 
 plugins:
   - serverless-offline
@@ -54,7 +54,7 @@ functions:
       - http:
           path: note
           method: post
-          authorizer: aws_iam
+          #authorizer: aws_iam
           cors:
             origin: '*'
             headers: ${self:custom.allowedHeaders}
@@ -66,7 +66,7 @@ functions:
       - http:
           path: note
           method: patch
-          authorizer: aws_iam
+          #authorizer: aws_iam
           cors:
             origin: '*'
             headers: ${self:custom.allowedHeaders}
@@ -78,7 +78,7 @@ functions:
       - http:
           path: notes
           method: get
-          authorizer: aws_iam
+          #authorizer: aws_iam
           cors:
             origin: '*'
             headers: ${self:custom.allowedHeaders}
@@ -90,7 +90,7 @@ functions:
       - http:
           path: note/n/{note_id}
           method: get
-          authorizer: aws_iam
+          #authorizer: aws_iam
           cors:
             origin: '*'
             headers: ${self:custom.allowedHeaders}
@@ -102,7 +102,7 @@ functions:
       - http:
           path: note/t/{timestamp}
           method: delete
-          authorizer: aws_iam
+          #authorizer: aws_iam
           cors:
             origin: '*'
             headers: ${self:custom.allowedHeaders}
