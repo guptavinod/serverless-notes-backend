@@ -12,7 +12,7 @@
     "aws-sdk": "^2.606.0",
     "jwt-decode": "^2.2.0",
     "moment": "^2.24.0",
-    "underscore": "^1.9.2",
+    "underscore": "^1.12.1",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
